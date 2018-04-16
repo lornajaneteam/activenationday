@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active Nation Day</title>
+    <link>https://and.netlify.com/</link>
+    <description>Recent content on Active Nation Day</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-AU</language>
+    <lastBuildDate>Wed, 16 Aug 2017 19:13:53 +1000</lastBuildDate>
+    
+	<atom:link href="https://and.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://and.netlify.com/sign-petition/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/sign-petition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://and.netlify.com/about/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/about/</guid>
+      <description>About Content</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://and.netlify.com/terms/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/terms/</guid>
+      <description>About Content</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>https://and.netlify.com/events/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Register Your Event</title>
+      <link>https://and.netlify.com/register-event/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/register-event/</guid>
+      <description>Register Event Content</description>
+    </item>
+    
+    <item>
+      <title>Register Your Event</title>
+      <link>https://and.netlify.com/thank-you/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/thank-you/</guid>
+      <description>Thanks you! You can now return to our homepage.</description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>https://and.netlify.com/video/</link>
+      <pubDate>Wed, 16 Aug 2017 19:13:53 +1000</pubDate>
+      
+      <guid>https://and.netlify.com/video/</guid>
+      <description>   </description>
+    </item>
+    
+  </channel>
+</rss>

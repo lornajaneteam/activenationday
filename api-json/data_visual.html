@@ -1,0 +1,1 @@
+{"stats":[{"key":"Kilometres walked by sisters world wide","value":"11373338.022","avgPerDay":584},{"key":"Kilometres run by sisters world wide","value":"4606099.462","avgPerDay":204},{"key":"Kilometres cycled by sisters world wide","value":"1390877.158","avgPerDay":22}]}
