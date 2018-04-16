@@ -1,0 +1,226 @@
+<div class="section__events">
+
+    <div class="header">
+
+        <div class="content-wrap">
+
+            <h1 class="heading heading-singe-page"><span class="head-body">Registered<br/>Events</span></h1>
+
+            <!--div class="header-description body-text white-text-shadow-md">
+                <p>Find events in your area.</p>
+                <p>Or register and hold your own to inspire your community to get moving on <span class="nobr">Active Nation Day</span>.</p>
+            </div-->
+
+            <a href='/register-event{{ if eq (getenv "HUGO_ENV") "DEV" }}/{{else}}{{end }}' class="btn btn-solid-1 btn-solid-pink btn-fixed-width">Register your own event</a>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--div class="main-content" data-events-api="/api-json/event_list.php" data-events-viewer-->
+    <div class="main-content" >
+        <div class="content-wrap">
+
+            <div class="toolbar clearfix">
+                <div class="left-md">
+                    <h2 class="heading heading--alt-style pink-text-highlight">Sister Events</h2>
+
+                </div>
+
+
+                <!--div class="right-md">
+                    <form class="search-container form">
+                        <div class="field">
+                            <label for="postcode" class="label">Search by postcode</label>
+
+                            <div class="inner-container">
+                                <input id="postcode" name="postcode" type="text" class="text-input" placeholder="2042">
+                                <button type="submit" class="submit-btn btn btn-solid-1 btn-solid-pink">Search</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn-clear-search btn btn-outline-1 btn-outline-pink" data-btn-clear-search>Show all</button>
+                </div>
+
+                <div class="search-form-error-container">
+                    <label class="error">Please enter a valid 4 digit postcode.</label>
+                </div-->
+            </div>
+
+
+            <!--div class="items-pagination"></div-->
+
+        </div>
+
+        <div class="content-wrap">
+
+          <div class="items-container">
+
+              <!-- INTERFACE -->
+               <header>
+
+                 <div id="search-input" class="mb3"></div>
+                 <div id="search-input-icon"></div>
+               </header>
+
+               <main>
+                 <div id="left-column">
+                   <div id="country" class="facet"></div>
+                   <div id="city" class="facet"></div>
+                   <div id="state" class="facet"></div>
+                   <div id="location" class="facet"></div>
+                   <div id="postcode" class="facet"></div>
+                   <div id="name" class="facet"></div>
+                 </div>
+
+
+                 <div id="right-column">
+                   <!--div id="sort-by-wrapper"><span id="sort-by"></span></div-->
+                   <div id="stats"></div>
+                   <div id="hits"></div>
+                   <div id="pagination"></div>
+                 </div>
+               </main>
+
+               <!--footer>
+                 Source Code on <a href="https://github.com/algolia/examples/blob/master/instant-search/instantsearch.js">Github</a> -
+                 Powered by <a href="https://www.algolia.com">Algolia</a> - Data from <a href="https://developer.bestbuy.com">Best Buy</a>
+               </footer-->
+               <!-- /INTERFACE -->
+
+               <!--{{ safeHTML "<img src=\"{{image}}\" alt=\"{{name}}\">" }}-->
+
+               {{ safeHTML "<script type=\"text/html\" id=\"hit-template\"><div class=\"hit\"><div class=\"description body-text hit-content\"><h1 class=\"mb2 heading hit-name\">{{{_highlightResult.name.value}}}</h1><div class=\"header-description\"><p class=\"uppercase\"><strong><span class=\"hit-country uppercase\">{{{_highlightResult.country.value}}}</span>, <span class=\"hit-state\">{{{_highlightResult.state.value}}}</span></strong></p><p class=\"hit-location\"><strong><span class=\"hit-location\">{{location}}</span> <span class=\"hit-suburb\">{{{_highlightResult.suburb.value}}}</span> <span class=\"hit-postcode\">{{{_highlightResult.postcode.value}}}</span>. <br>Start Time: <span class=\"hit-time\">{{time}}</span></strong></p><p class=\"\">{{description}}</p><p><a class=\"hit-url\" href=\"{{url}}\" target=\"_blank\">More details about this event &rarr;</a></p></div></div><br><br></div></script>" }}
+
+
+               {{ safeHTML "<script type=\"text/html\" id=\"no-results-template\"><div id=\"no-results-message\"><p>There are no <em>\"{{query}}\"</em> events yet.<br>More events are being added daily so check again soon.</p><a href=\".\" class=\"clear-all\">Clear search</a></div></script>" }}
+
+
+               <!--script src="/algolia.js"></script-->
+
+               <!-- /TEMPLATES -->
+
+               <!-- SCRIPTS -->
+               <!--script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+               <script src="/js/search-simplified.js"></script-->
+               <!-- /SCRIPTS -->
+
+          </div>
+
+
+
+
+          <!--div class="description body-text">
+              <h1 class="heading">Lorna Jane Los Angeles Active Nation Day</h1>
+              <div class="header-description">
+                  <p class=""><strong>Santa Monica Place - Center Plaza, 395 Santa Monica Place, 90401. Time: 10:00am - 12:00pm</strong></p>
+                  <p class="">Description: Wear your brightest Lorna Jane, pack a towel, your water bottle and get ready to sweat! Our 30-minute MOVE class will be a fusion of strength and movements guided by Katie Dunlop of Love Sweat Fitness! Followed by a Yoga cool down.</p>
+                  <p><a href="https://www.eventbrite.com/e/active-nation-day-los-angeles-2017-tickets-37713499091" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Active Nation Day Mexico</h1>
+              <div class="header-description">
+                  <p class=""><strong>PLAZA CARSO. Lago Zurich 219-245, Nuevo Polanco, CP 11529. Time: 1:00pm - 3:00pm</strong></p>
+                  <p class="">Muevete este 24 de Septiembre con Brenda Medina Yoga y Fit 7/8, mujeres renovando su compromiso para mantenerse activas, moviendose al ritmo de la musica en esta clase masiva.</p>
+                  <p><a href="https://www.facebook.com/events/1448712405194083/?context=create&previousaction=create&ref=42&sid_create=2302753766&action_history=[%7B%22surface%22%3A%22create_dialog%22%2C%22mechanism%22%3A%22page_create_dialog%22%2C%22extra_data%22%3A[]%7D]&has_source=1" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Lorna Jane Quebec City Active Nation Day</h1>
+              <div class="header-description">
+                  <p class=""><strong>Entourage sur-le-Lac - 99 Chemin du Tour-du-Lac, Québec, G3B2J8. Time: 1:00pm - 3:00pm</strong></p>
+                  <p class="">Make your move on Sunday 24th September with Natascha Bécard and enjoy a guided meditation about Loving Yourself with Pavla.</p>
+                  <p><a href="https://www.facebook.com/events/270789800077742/?active_tab=about" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Lorna Jane Brisbane Active Nation Day</h1>
+              <div class="header-description">
+                  <p class=""><strong>Northshore, 282 MacArthur Ave, Eagle Farm, 4009. Time: 7:00am - 12:00pm</strong></p>
+                  <p class="">Your Move Matters! Join Lorna Jane Clarkson on Sunday 24th September along with the BUF Girls and let your actions speak louder than words by inspiring others to move towards a fitter future.</p>
+                  <p><a href="https://www.eventbrite.com.au/e/active-nation-day-brisbane-2017-tickets-37585440063?aff=es2" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Lorna Jane Toronto Active Nation Day</h1>
+              <div class="header-description">
+                  <p class=""><strong>CF Shops at Don Mills - 1090 Don Mills Rd, North York, ON M3C 3R6. Time: 7:00am - 2:00pm</strong></p>
+                  <p class="">Get ready to do a whole lot of MOVING, NOURISHING and BELIEVING with Samantha Ushedo and F45 Training plus shop the MNB Markets.</p>
+                  <p><a href="https://www.facebook.com/events/2041710602716835/?active_tab=discussion" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Lorna Jane UK Active Nation Day</h1>
+              <div class="header-description">
+                  <p class=""><strong>103 Gaunt St, London SE1 6DP. Time: 11:30am - 5:30pm</strong></p>
+                  <p class="">This year in London, Move, Nourish and Believe with us on Sunday 24th September in partnership with Ministry Does Fitness. Enjoy workouts, workshops, food, and beauty from London’s best. Bring with you your water bottle, sweat towel and high energy.</p>
+                  <p><a href="http://www.lornajane.co.uk/news/activenationday/" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Get moving with F45 Runaway Bay</h1>
+              <div class="header-description">
+                  <p class=""><strong>4/445 Oxley Drive, Runaway Bay, Queensland, 4216. Time: 12:30pm</strong></p>
+                  <p class="">45 min functional circuit Class - 12:30pm. 1 hour Yoga with Merry Maker Sisters - 1:30pm. Afternoon tea.</p>
+                  <p><a href="https://www.facebook.com/f45runawaybay/?ref=br_rs" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Jazzercise Nambour National Active Day</h1>
+              <div class="header-description">
+                  <p class=""><strong>Currie Street Nambour (enter via Howard Street), Queensland, 4560. Time: 8.30am- 10.45am</strong></p>
+                  <p class="">Description: Jazzercise Nambour will provide FREE fitness classes to the community and talk about the benefits of keeping active.</p>
+                  <p><a href="https://www.facebook.com/JazzerciseNambour" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div>
+
+          <br><hr><br>
+
+          <div class="description body-text">
+              <h1 class="heading">Active Nation Day Bootcamp</h1>
+              <div class="header-description">
+                  <p class=""><strong>Athena Gym, Aberdeen, UK, 4560. Time: 9.00am</strong></p>
+                  <p class="">Description: Jazzercise Nambour will provide FREE fitness classes to the community and talk about the benefits of keeping active.</p>
+                  <p><a href="https://www.facebook.com/JazzerciseNambour" target="_blank">More details about this event &rarr;</a></p>
+              </div>
+          </div-->
+
+
+
+          <!--p><i>More Active Nation Day events are being added to the website. Check back for new events and <a href="/register-event/">add your own event</a></b>.</i></p-->
+
+
+
+        </div>
+
+
+
+    </div>
+
+</div>

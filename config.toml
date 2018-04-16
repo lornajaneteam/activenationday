@@ -1,0 +1,17 @@
+baseURL = "https://and.netlify.com"
+languageCode = "en-AU"
+name = "Lorna Jane"
+title = "Active Nation Day"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = ["blog"]
+min_version = 0.19
+googleAnalytics = "UA-16103240-9"
+publishdir = "../../../../github/activedaynation.com"
+
+[author]
+  name = "STOQE"
+  homepage = "https://www.stoqe.com"

@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+
+  {{ if .IsHome }}
+  {{ else if eq .URL "/video/" }}
+    {{ partial "video.html" . }}
+  {{ else if eq .URL "/about/" }}
+    {{ partial "about.html" . }}
+  {{ else if eq .URL "/events/" }}
+    {{ partial "events.html" . }}
+  {{ else if eq .URL "/register-event/" }}
+    {{ partial "register-event.html" . }}
+  {{ else if eq .URL "/sign-petition/" }}
+    {{ partial "sign-petition.html" . }}
+  {{ else if eq .URL "/thank-you/" }}
+    {{ partial "thank-you.html" . }}
+  {{ else if eq .URL "/terms/" }}
+    {{ partial "terms.html" . }}
+  {{ end }}
+
+	<!--main>
+		<article>
+
+			<div>
+				{{ .Content }}
+			</div>
+
+		</article>
+	</main-->
+
+
+
+<!-- {{ partial "sidebar.html" . }} -->
+{{ partial "footer.html" . }}
